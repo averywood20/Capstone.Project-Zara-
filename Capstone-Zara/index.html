@@ -1,26 +1,34 @@
 <!DOCTYPE html>
 <html lang="em">
 <head>
-    <meta charset="UTF=8" />
-    <meta name="viewport" content="wedth=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zara</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
     <header class="header">
-        <div class="Logo">Zara</div>
-        <nav class = "nav">
+        <div class="logo">Zara</div>
+        <nav class="nav">
             <a href="#">Home</a>
             <a href="#">Womens</a>
             <a href="#">Mens</a>
             <a href="#">Kids</a>
         </nav>
+        <form class="search-bar" action="#" method="get">
+            <label class="visually-hidden" for="search-input">Search Zara</label>
+            <input id="search-input" type="search" name="q" placeholder="Search Zara..." aria-label="Search Zara" />
+            <button type="submit">Search</button>
+        </form>
     </header>
 
     <main class="content">
         <h1>Welcome</h1>
         <img src="images/zara.jpeg" alt="Models in jeans representing Zara clothing" height="300px" width="500px">
+
+        <button type="button">Womens</button>
+        <button type="button">Mens</button>
     </main>
 </body>
 </html>
