@@ -5,11 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zara</title>
     <script src="https://kit.fontawesome.com/4013ed0f94.js" crossorigin="anonymous"></script>
-    <script src="script.js" defer></script>
+    <script src="review.js" defer></script>
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    
+    <header class="header">
+        <div class="navmenu hidden">
+            <nav class="navMenuLinks">
+                <a href="#">Home</a>
+                <a href="#">Womens</a>
+                <a href="#">Mens</a>
+                <a href="#">Kids</a>
+                <a href="#">Beauty</a>
+                <a href="#">Travel</a>
+                <a href="#">Home Decor</a>
+            </nav>
+        </div>
+        <a href="#" class="icon">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+        <div class="logo">Zara</div>
+    </header>
+    <main class="review-container">
+    <h1>Leave a Review</h1>
+
+    <form id="reviewForm" class="review-form">
+      <label for="rating">Your Rating</label>
+      <div class="stars" id="starRating">
+            <span data-value="1">&#9733;</span>
+            <span data-value="2">&#9733;</span>
+            <span data-value="3">&#9733;</span>
+            <span data-value="4">&#9733;</span>
+            <span data-value="5">&#9733;</span>
+        </div>
+
+      <label for="review">Your Review</label>
+      <textarea id="review" name="review" rows="5" placeholder="Write your review..." required></textarea>
+
+      <button type="submit">Submit Review</button>
+    </form>
+
+    <h2>Previous Reviews</h2>
+    <div id="reviewsList" class="reviews-list"></div>
+  </main>
 </body>
 
 </html>
