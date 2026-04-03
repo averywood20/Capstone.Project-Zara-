@@ -43,9 +43,6 @@ main {
 
 footer {
     grid-area: footer;
-}
-footer {
-    grid-area: footer;
     background: #b0b0b0;
     display: flex;
     align-items: center;
