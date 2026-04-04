@@ -10,9 +10,9 @@ document.querySelector("#kidNavBtn").addEventListener("click", event => window.l
 
 document.querySelector("#beautyNavBtn").addEventListener("click", event => window.location.href = "beautySection.html");
 
-// document.querySelector("#travelNavBtn").addEventListener("click", event => window.location.href = ".html");
+document.querySelector("#travelNavBtn").addEventListener("click", event => window.location.href = "travel.html");
 
-// document.querySelector("#homeDecorNavBtn").addEventListener("click", event => window.location.href = ".html");
+document.querySelector("#homeDecorNavBtn").addEventListener("click", event => window.location.href = "homeDecor.html");
 
 
 // Get product from localStorage

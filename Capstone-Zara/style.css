@@ -59,8 +59,9 @@ header {
 }
 
 
-.header-icons a {
-   color: var(--text-color)
+.header a {
+   color: var(--text-color);
+   text-decoration: none;
 }
 
 
@@ -182,7 +183,6 @@ header a.icon {
 
 .product-card img{
     width: 100%;
-    max-width: 100%;
     height: 193.73px;
     object-fit: cover;
     object-position: center;
