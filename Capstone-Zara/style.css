@@ -603,9 +603,10 @@ footer {
 }
 footer a {
     color: var(--text-color);
-    text decoration: none;
+    text-decoration: none;
 }
-footer a: hoover { 
+
+footer a:hover { 
     text-decoration: underline;
 }
 .footer-right {
