@@ -34,3 +34,10 @@ document.getElementById('add-to-cart').addEventListener('click', () => {
     alert(`${product.name} added to cart!`);
 });
 
+document.getElementById('searchBar').addEventListener('input', (e) => {
+    const query = e.target.value.toLowerCase();
+    const filtered = womensProducts.filter(p => p.name.toLowerCase().includes(query));
+    displayProducts(filtered);
+});
+
+
