@@ -1,63 +1,46 @@
 "use strict";
 
-const womensProducts = [
-    { 
-      name: "Short Long Sleeve Red Dress", 
-      image: "images/reddress1.jpeg",
-      price: "$49.99",
-      description: "A stylish short long sleeve red dress perfect for parties."
-    },
-    { 
-      name: "Long Pleated Red Dress", 
-      image: "images/reddress2.jpeg",
-      price: "$59.99",
-      description: "Elegant long pleated red dress for formal occasions."
-    },
-    { 
-      name: "One shoulder Red Dress", 
-      image: "images/reddress3.jpeg",
-      price: "$54.99",
-      description: "Trendy one shoulder red dress for casual or evening wear."
-    },
-    { 
-      name: "Short Red Dress", 
-      image: "images/reddress4.jpeg",
-      price: "$39.99",
-      description: "Simple short red dress, comfortable and stylish."
-    },
-    { 
-      name: "Women's Jeans", 
-      image: "images/womenJeans1.jpeg",
-      price: "$69.99",
-      description: "Classic women's jeans, versatile and durable."
-    }
-];
 
 function displayProducts(list) {
     const container = document.getElementById('productResults');
-    container.innerHTML = ""; // Clear previous results
+    const noResults = document.getElementById('noResults');
+
+    container.innerHTML = "";
+
+    if (list.length === 0) {
+        noResults.style.display = "block";
+        return;
+    } else {
+        noResults.style.display = "none";
+    }
 
     list.forEach(product => {
         const card = document.createElement('div');
         card.classList.add('product-card');
+
         card.innerHTML = `
             <img src="${product.image}" alt="${product.name}">
             <p>${product.name}</p>
             <p>${product.price}</p>
         `;
-        container.appendChild(card);
 
         card.addEventListener('click', () => {
             localStorage.setItem('selectedProduct', JSON.stringify(product));
             window.location.href = "productDetails.html";
         });
+
+        container.appendChild(card);
     });
 }
 
-displayProducts(womensProducts);
+const params = new URLSearchParams(window.location.search);
+const query = params.get("q")?.toLowerCase() || "";
 
-document.getElementById('searchBar').addEventListener('input', (e) => {
-    const query = e.target.value.toLowerCase();
-    const filtered = womensProducts.filter(p => p.name.toLowerCase().includes(query));
-    displayProducts(filtered);
-});
+document.getElementById('search-input').value = query;
+
+const filtered = womensProducts.filter(p =>
+  p.name.toLowerCase().includes(query)
+);
+
+displayProducts(filtered);
+console.log(filtered);

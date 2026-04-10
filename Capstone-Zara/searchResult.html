@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zara</title>
     <script src="https://kit.fontawesome.com/4013ed0f94.js" crossorigin="anonymous"></script>
+    <script src="JS/products.js" defer></script>
     <script src="JS/searchResults.js" defer></script>
     <script src="JS/script.js" defer></script>
     <link rel="stylesheet" href="style.css" />
@@ -52,14 +53,19 @@
         </div>
     </header>
     <main>
-        <div>
-            <form class="search-bar" action="#" method="get">
+        <div class="search-container">
+            <!-- 🔹 Search bar (stays on results page too) -->
+            <form class="search-bar" action="searchResult.html" method="get">
                 <label class="hidden" for="search-input">Search Zara</label>
-                <input id="search-input" type="search" name="q" placeholder="Search Zara..." aria-label="Search Zara" />
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </form>  
+                <input id="search-input" type="search" name="q" placeholder="Search Zara..." />
+            </form>
         </div>
-        <div id="productResults" class="products-grid"></div>
+
+        <!-- 🔹 Results -->
+        <div id="productResults"></div>
+
+        <!-- 🔹 Empty state -->
+        <p id="noResults" style="display:none;">No results found</p>
     </main>
     <footer class="footer">
         <a href="contact.html">Contact info</a>
