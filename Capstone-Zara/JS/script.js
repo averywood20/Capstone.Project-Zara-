@@ -1,18 +1,34 @@
 "use strict";
 
+// load products from products.json
+async function loadProducts() {
+    try {
+        const response = await fetch("./JS/products.json");
+        let products = await response.json();
+        
+        // add products to local
+        localStorage.setItem('products', JSON.stringify(products));
+    } catch(error) {
+        console.log(error);
+    }
+}
+
+window.addEventListener("DOMContentLoaded", loadProducts);
+
 document.querySelector("#hamburgerMenu").addEventListener("click", event => { document.querySelector(".navmenu").classList.toggle("hidden") });
 
-document.querySelector("#womenNavBtn").addEventListener("click", event => window.location.href = "women.html");
+window.addEventListener("DOMContentLoaded", (event) => {
 
-document.querySelector("#menNavBtn").addEventListener("click", event => window.location.href = "mens.html");
+    if (event.target.location.href.includes("index.html")) {
+        document.querySelector("#womenNavBtn").addEventListener("click", () => window.location.href = "women.html");
+        document.querySelector("#menNavBtn").addEventListener("click", () => window.location.href = "mens.html");
+        document.querySelector("#kidNavBtn").addEventListener("click", () => window.location.href = "kids.html");
+        document.querySelector("#beautyNavBtn").addEventListener("click", () => window.location.href = "beautySection.html");
+        document.querySelector("#travelNavBtn").addEventListener("click", () => window.location.href = "travel.html");
+        document.querySelector("#homeDecorNavBtn").addEventListener("click", () => window.location.href = "homeDecor.html");
 
-document.querySelector("#kidNavBtn").addEventListener("click", event => window.location.href = "kids.html");
-
-document.querySelector("#beautyNavBtn").addEventListener("click", event => window.location.href = "beautySection.html");
-
-document.querySelector("#travelNavBtn").addEventListener("click", event => window.location.href = "travel.html");
-
-document.querySelector("#homeDecorNavBtn").addEventListener("click", event => window.location.href = "homeDecor.html");
+    }
+});
 
 
 // Get product from localStorage
@@ -43,52 +59,14 @@ if (addToCartBtn && product) {
         cart.push(product);
 
         localStorage.setItem('cart', JSON.stringify(cart));
-
-        alert(`${product.name} added to cart!`);
     });
 }
 
-// FAKE DATA (NO BACKEND)
-// const items = ["Home", "Explore", "About", "Contact"];
-
-// const searchInput = document.getElementById("search");
-// const results = document.getElementById("results");
-// const loader = document.getElementById("loader");
-
-// searchInput.addEventListener("input", () => {
-//   // Clear old results immediately
-//   results.innerHTML = "";
-
-//   // Show loader
-//   loader.classList.remove("hidden");
-
-//   // Simulate loading delay
-//   setTimeout(() => {
-//     loader.classList.add("hidden");
-
-//     const query = searchInput.value.toLowerCase();
-
-//     const matches = items.filter(item =>
-//       item.toLowerCase().includes(query)
-//     );
-
-//     // Show message if nothing matches
-//     if (matches.length === 0 && query !== "") {
-//       const li = document.createElement("li");
-//       li.textContent = "No results found";
-//       results.appendChild(li);
-//     }
-
-//     matches.forEach(match => {
-//       const li = document.createElement("li");
-//       li.textContent = match;
-//       results.appendChild(li);
-//     });
-
-//   }, 1200); // long delay so spinner is visible
-// });
-
 document.addEventListener('DOMContentLoaded', () => {
+
+    let products = localStorage.getItem('products');
+    console.log(products);
+    products = JSON.parse(products);
 
     const searchInput = document.getElementById('search-input');
     const suggestionsBox = document.getElementById('suggestions');
@@ -102,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (query === "") return;
 
-        const filtered = womensProducts.filter(p =>
+        const filtered = products.filter(p =>
             p.name.toLowerCase().includes(query)
         );
 
