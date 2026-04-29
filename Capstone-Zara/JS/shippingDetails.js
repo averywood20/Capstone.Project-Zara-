@@ -46,29 +46,33 @@ const fields = [
 // REAL-TIME VALIDATION
 fields.forEach(field => {
     const input = document.getElementById(field.id);
-    const errorDiv = input.nextElementSibling;
+    const errorDiv = input.parentElement.querySelector(".error-message");
 
-    function validateField() {
+    function validateField(showError = false) {
         const value = input.value;
+        const errorDiv = input.parentElement.querySelector(".error-message");
 
-        if (!field.validate(value)) {
-            input.classList.add("error");
+        const isValid = field.validate(value);
+
+        if (!isValid) {
+            input.classList.add("invalid");
             input.classList.remove("valid");
-            errorDiv.textContent = field.message;
+
+            if (showError) {
+                errorDiv.textContent = field.message;
+            }
+
             return false;
         } else {
-            input.classList.remove("error");
+            input.classList.remove("invalid");
             input.classList.add("valid");
             errorDiv.textContent = "";
             return true;
         }
     }
 
-    // Validate while typing
-    input.addEventListener("input", validateField);
-
-    // Validate when leaving field
-    input.addEventListener("blur", validateField);
+    input.addEventListener("input", () => validateField(false));
+    input.addEventListener("blur", () => validateField(true));
 });
 
 
@@ -80,20 +84,26 @@ form.addEventListener("submit", function (e) {
 
     fields.forEach(field => {
         const input = document.getElementById(field.id);
-        const errorDiv = input.nextElementSibling;
+        const errorDiv = input.parentElement.querySelector(".error-message");
 
-        if (!field.validate(input.value)) {
-            input.classList.add("error");
+        const value = input.value;
+
+        const isValid = field.validate(value);
+
+        if (!isValid) {
+            input.classList.add("invalid");
             input.classList.remove("valid");
             errorDiv.textContent = field.message;
             allValid = false;
+        } else {
+            input.classList.remove("invalid");
+            input.classList.add("valid");
+            errorDiv.textContent = "";
         }
     });
 
     if (allValid) {
         console.log("Form is valid!");
-        form.submit(); // proceed
-    } else {
-        console.log("Fix errors before submitting");
+        form.submit();
     }
 });
