@@ -80,11 +80,6 @@
     font-size: 100%; /* respects browser/user zoom settings */
 }
 
-body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    transition: background-color 300ms ease, color 300ms ease;
-}
 
 input {
     background-color: var(--input-bg);
@@ -250,11 +245,14 @@ body {
         "header"
         "main"
         "footer";
-    grid-template-rows: 5rem auto minmax(2.25rem, auto); 
+    grid-template-rows: 5rem 1fr auto; 
     grid-template-columns: 100%;
     justify-content: space-evenly;
     min-height: 100vh;
     overflow-x: clip;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 300ms ease, color 300ms ease;
 }
 
 header {
@@ -857,6 +855,12 @@ footer a:hover {
     margin-bottom: 1.25rem; 
 }
 
+.shipping-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
 #shippingForm-inputs {
     display: flex;
 }
@@ -866,6 +870,11 @@ footer a:hover {
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
+}
+.submit-btn {
+    margin-top: 1.5rem;
+    width: 100%;
+    padding: 0.75rem;
 }
 
 /* MOBILE  */
@@ -884,6 +893,9 @@ footer a:hover {
     }
 }
 
+.field-group {
+    display: contents;
+}
 
 .shipping-form input,
 .shipping-form select {
@@ -899,6 +911,20 @@ footer a:hover {
     outline: none;
 }
 
+.shipping-form input.invalid,
+.shipping-form select.invalid {
+    border-color: #c0392b !important;
+    background-color: var(--input-invalid-bg);
+    outline-color: #c0392b !important;
+}
+
+.shipping-form input.valid,
+.shipping-form select.valid {
+    border-color: #27ae60 !important;
+    background-color: var(--input-valid-bg);
+    outline-color: #27ae60 !important;
+}
+
 .shipping-form button {
     margin-top: 0.9375rem; 
     padding: 0.75rem; 
@@ -906,7 +932,6 @@ footer a:hover {
     color: white;
     border: none;
     cursor: pointer;
-    font-size: 14px;
     transition: background-color 300ms ease-in-out;
     font-size: 0.875rem; 
 }
@@ -922,14 +947,6 @@ footer a:hover {
     font-size: 0.75rem; 
     min-height: 0.875rem; 
     margin-top: 0.125rem;
-}
-
-.error {
-    border: 2px solid red;
-}
-
-.valid {
-    border: 2px solid black;
 }
 
 /* +/- buttons */
