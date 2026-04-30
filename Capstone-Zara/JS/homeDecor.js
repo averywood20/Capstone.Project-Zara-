@@ -2,47 +2,61 @@
 
 const homeProducts = [
     {
-        name: "Round Rug",
-        image: "images/roundrug.jpeg",
-        price: 100.00,
-        category: "rug",
+        "id": 33,
+        "name": "Round Rug",
+        "image": "images/roundrug.jpeg",
+        "price": 100.00,
+        "category": "rug",
+        "department": "homeDecor"
     },
     {
-        name: "Rectangle Area Rug",
-        image: "images/rectanglerug.jpeg",
-        price: 110.00,
-        category: "rug",
+        "id": 34,
+        "name": "Rectangle Area Rug",
+        "image": "images/rectanglerug.jpeg",
+        "price": 110.00,
+        "category": "rug",
+        "department": "homeDecor"
     },
     {
-        name: "Artificial Potted Rubber Plant",
-        image: "images/rubberplant.jpeg",
-        price: 15.00,
-        category: "plant",
+        "id": 35,
+        "name": "Artificial Potted Rubber Plant",
+        "image": "images/rubberplant.jpeg",
+        "price": 15.00,
+        "category": "plant",
+        "department": "homeDecor"
     },
     {
-        name: "Artifical Potted Tree",
-        image: "images/tropicaltree.jpeg",
-        price: 31.00,
-        category: "plant",
+        "id": 36,
+        "name": "Artifical Potted Tree",
+        "image": "images/tropicaltree.jpeg",
+        "price": 31.00,
+        "category": "plant",
+        "department": "homeDecor"
     },
     {
-        name: "Artifical Potted Philodendron",
-        image: "images/philodendron.jpeg",
-        price: 18.00,
-        category: "plant",
+        "id": 37,
+        "name": "Artifical Potted Philodendron",
+        "image": "images/philodendron.jpeg",
+        "price": 18.00,
+        "category": "plant",
+        "department": "homeDecor"
     },
     {
-        name: "Square Embroidered Throw Pillow",
-        image: "images/embroideredthrowpillow.jpg",
-        price: 22.00,
-        category: "pillow",
+        "id": 38,
+        "name": "Square Embroidered Throw Pillow",
+        "image": "images/embroideredthrowpillow.jpg",
+        "price": 22.00,
+        "category": "pillow",
+        "department": "homeDecor"
     },
     {
-        name: "Embroidered Lumbar Pillow",
-        image: "images/embroideredlumbarpillow.jpeg",
-        price: 23.00,
-        category: "pillow",
-    },
+        "id": 39,
+        "name": "Embroidered Lumbar Pillow",
+        "image": "images/embroideredlumbarpillow.jpeg",
+        "price": 23.00,
+        "category": "pillow",
+        "department": "homeDecor"
+    }
 ];
 
 function displayProducts(list) {

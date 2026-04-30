@@ -2,34 +2,44 @@
 
 const travelProducts = [
     {
-        name: "Polyester Travel Bag",
-        image: "images/travelbag.jpg",
-        price: 60.00,
-        category: "bag",
+        "id": 28,
+        "name": "Polyester Travel Bag",
+        "image": "images/travelbag.jpg",
+        "price": 60.00,
+        "category": "bag",
+        "department": "travel"
     },
     {
-        name: "Canvas Travel Bag",
-        image: "images/graytravelbag.jpg",
-        price: 100.00,
-        category: "bag",
+        "id": 29,
+        "name": "Canvas Travel Bag",
+        "image": "images/graytravelbag.jpg",
+        "price": 100.00,
+        "category": "bag",
+        "department": "travel"
     },
     {
-        name: "Duffel Bag",
-        image: "images/duffelbag.jpg",
-        price: 50.00,
-        category: "bag",
+        "id": 30,
+        "name": "Duffel Bag",
+        "image": "images/duffelbag.jpg",
+        "price": 50.00,
+        "category": "bag",
+        "department": "travel"
     },
     {
-        name: "Bifold Wallet",
-        image: "images/bifoldwallet.jpeg",
-        price: 30.00,
-        category: "wallet",
+        "id": 31,
+        "name": "Bifold Wallet",
+        "image": "images/bifoldwallet.jpeg",
+        "price": 30.00,
+        "category": "wallet",
+        "department": "travel"
     },
     {
-        name: "Zip Wallet",
-        image: "images/zipwallet.jpeg",
-        price: 25.00,
-        category: "wallet",
+        "id": 32,
+        "name": "Zip Wallet",
+        "image": "images/zipwallet.jpeg",
+        "price": 25.00,
+        "category": "wallet",
+        "department": "travel"
     }
 ];
 
