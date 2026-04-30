@@ -51,8 +51,8 @@ const womensProducts = [
     },
     {
         "id": 7,
-        "name": "Ripped Jeans",
-        "image": "images/womensJeans1.jpeg",
+        "name": "Dark Denim Jeans",
+        "image": "images/womensJean.jpeg",
         "price": 49.99,
         "category": "pants",
         "department": "womens"
