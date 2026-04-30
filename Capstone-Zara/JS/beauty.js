@@ -2,52 +2,61 @@
 
 const beautyProducts = [
     {
-        name: "Black Eyeliner",
-        image: "images/eyeliner.jpg",
-        price: 12.99,
-        category: "eyes"
+        "id": 21,
+        "name": "Black Eyeliner",
+        "image": "images/eyeliner.jpg",
+        "price": 12.99,
+        "category": "eyes",
+        "department": "beauty"
     },
     {
-        name: "Jelly Blush - BubbleGum ",
-        image: "images/jellyBlush.jpg",
-        price: 15.99,
-        category: "face"
+        "id": 22,
+        "name": "Jelly Blush - BubbleGum ",
+        "image": "images/jellyBlush.jpg",
+        "price": 15.99,
+        "category": "face",
+        "department": "beauty"
     },
     {
-        name: "Lip Stain - Mauve",
-        image: "images/lipstain.jpg",
-        price: 12.99,
-        category: "lips"
+        "id": 23,
+        "name": "Lip Stain - Mauve",
+        "image": "images/lipstain.jpg",
+        "price": 12.99,
+        "category": "lips",
+        "department": "beauty"
     },
     {
-        name: "Lip Gloss - Peaches ",
-        image: "images/lipgloss.jpg",
-        price: 10.99,
-        category: "lips"
-
+        "id": 24,
+        "name": "Lip Gloss - Peaches ",
+        "image": "images/lipgloss.jpg",
+        "price": 10.99,
+        "category": "lips",
+        "department": "beauty"
     },
     {
-        name: "Liquid Bronzer- Dark",
-        image: "images/liquidBronzer.jpg",
-        price: 19.99,
-        category: "face"
-
+        "id": 25,
+        "name": "Liquid Bronzer- Dark",
+        "image": "images/liquidBronzer.jpg",
+        "price": 19.99,
+        "category": "face",
+        "department": "beauty"
     },
     {
-        name: "Liquid Eyeshadow - Pink",
-        image: "images/liquidEyeshadow.jpg",
-        price: 24.99,
-        category: "eyes"
-
+        "id": 26,
+        "name": "Liquid Eyeshadow - Pink",
+        "image": "images/liquidEyeshadow.jpg",
+        "price": 24.99,
+        "category": "eyes",
+        "department": "beauty"
     },
     {
-        name: "Liquid Highlighter - Golden",
-        image: "images/liquidHighlighter.jpg",
-        price: 19.99,
-        category: "face"
-
+        "id": 27,
+        "name": "Liquid Highlighter - Golden",
+        "image": "images/liquidHighlighter.jpg",
+        "price": 19.99,
+        "category": "face",
+        "department": "beauty"
     }
-
 ];
 
 function displayProducts(list) {

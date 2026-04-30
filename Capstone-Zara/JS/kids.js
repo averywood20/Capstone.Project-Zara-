@@ -2,43 +2,52 @@
 
 const kidsProducts = [
     {
-        name: "Girls Dress",
-        image: "images/girlsDress.jpeg",
-        price: 15.99,
-        category: "girls"
+        "id": 15,
+        "name": "Girls Dress",
+        "image": "images/girlsDress.jpeg",
+        "price": 15.99,
+        "category": "girls",
+        "department": "kids"
     },
     {
-        name: "Girls Cheetah Pants",
-        image: "images/girlsCheetahPants.jpeg",
-        price: 24.99,
-        category: "girls"
+        "id": 16,
+        "name": "Girls Cheetah Pants",
+        "image": "images/girlsCheetahPants.jpeg",
+        "price": 24.99,
+        "category": "girls",
+        "department": "kids"
     },
     {
-        name: "Girls Heart Shirt",
-        image: "images/girlsheartShirt.jpeg",
-        price: 12.99,
-        category: "girls"
+        "id": 17,
+        "name": "Girls Heart Shirt",
+        "image": "images/girlsheartShirt.jpeg",
+        "price": 12.99,
+        "category": "girls",
+        "department": "kids"
     },
     {
-        name: "Boys Cargo Pants",
-        image: "images/boysCargoPants.jpeg",
-        price: 24.99,
-        category: "boys"
-
+        "id": 18,
+        "name": "Boys Cargo Pants",
+        "image": "images/boysCargoPants.jpeg",
+        "price": 24.99,
+        "category": "boys",
+        "department": "kids"
     },
     {
-        name: "Boys Denim Shirt",
-        image: "images/boysDenimShirt.jpeg",
-        price: 19.99,
-        category: "boys"
-
+        "id": 19,
+        "name": "Boys Denim Shirt",
+        "image": "images/boysDenimShirt.jpeg",
+        "price": 19.99,
+        "category": "boys",
+        "department": "kids"
     },
     {
-        name: "Boys Pullover And Jeans Set",
-        image: "images/boysSet.jpeg",
-        price: 39.99,
-        category: "boys"
-
+        "id": 20,
+        "name": "Boys Pullover And Jeans Set",
+        "image": "images/boysSet.jpeg",
+        "price": 39.99,
+        "category": "boys",
+        "department": "kids"
     }
 ];
 

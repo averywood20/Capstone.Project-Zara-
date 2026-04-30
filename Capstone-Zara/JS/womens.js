@@ -2,52 +2,61 @@
 
 const womensProducts = [
     {
-        name: "Blue Mini Dress",
-        image: "images/blueDress.jpeg",
-        price: 39.99,
-        category: "dress"
+        "id": 1,
+        "name": "Blue Mini Dress",
+        "image": "images/blueDress.jpeg",
+        "price": 39.99,
+        "category": "dress",
+        "department": "womens"
     },
     {
-        name: "Long Pleated Red Dress",
-        image: "images/reddress2.jpeg",
-        price: 59.99,
-        category: "dress"
+        "id": 2,
+        "name": "Long Pleated Red Dress",
+        "image": "images/reddress2.jpeg",
+        "price": 59.99,
+        "category": "dress",
+        "department": "womens"
     },
     {
-        name: "Blue Pullover Sweatshirt",
-        image: "images/bluePulloverW.jpeg",
-        price: 29.99,
-        category: "shirts"
+        "id": 3,
+        "name": "Blue Pullover Sweatshirt",
+        "image": "images/bluePulloverW.jpeg",
+        "price": 29.99,
+        "category": "shirts",
+        "department": "womens"
     },
     {
-        name: "Cream Dress Pants",
-        image: "images/dressPantsW.jpeg",
-        price: 48.99,
-        category: "pants"
-
+        "id": 4,
+        "name": "Cream Dress Pants",
+        "image": "images/dressPantsW.jpeg",
+        "price": 48.99,
+        "category": "pants",
+        "department": "womens"
     },
     {
-        name: "Green Short Sleeve T-shirt",
-        image: "images/greenTeeW.jpeg",
-        price: 19.99,
-        category: "shirts"
-
+        "id": 5,
+        "name": "Green Short Sleeve T-shirt",
+        "image": "images/greenTeeW.jpeg",
+        "price": 19.99,
+        "category": "shirts",
+        "department": "womens"
     },
     {
-        name: "Light Wash Jeans",
-        image: "images/lightwashJeansW.jpeg",
-        price: 59.99,
-        category: "pants"
-
+        "id": 6,
+        "name": "Light Wash Jeans",
+        "image": "images/lightwashJeansW.jpeg",
+        "price": 59.99,
+        "category": "pants",
+        "department": "womens"
     },
     {
-        name: "Ripped Jeans",
-        image: "images/womenJeans1.jpeg",
-        price: 49.99,
-        category: "pants"
-
+        "id": 7,
+        "name": "Ripped Jeans",
+        "image": "images/womensJeans1.jpeg",
+        "price": 49.99,
+        "category": "pants",
+        "department": "womens"
     }
-
 ];
 
 function displayProducts(list) {

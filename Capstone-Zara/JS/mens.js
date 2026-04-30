@@ -2,52 +2,62 @@
 
 const mensProducts = [
     {
-        name: "Denim Collared Shirt",
-        image: "images/denimCollaredShirt.jpeg",
-        price: 29.99,
-        category: "shirts"
+        "id": 8,
+        "name": "Denim Collared Shirt",
+        "image": "images/denimCollaredShirt.jpeg",
+        "price": 29.99,
+        "category": "shirts",
+        "department": "mens"
     },
     {
-        name: "Graphic T-Shirt",
-        image: "images/graphicTee.jpeg",
-        price: 19.99,
-        category: "shirts"
+        "id": 9,
+        "name": "Graphic T-Shirt",
+        "image": "images/graphicTee.jpeg",
+        "price": 19.99,
+        "category": "shirts",
+        "department": "mens"
     },
     {
-        name: "Khaki Cargo Pants",
-        image: "images/khakiCargos.jpeg",
-        price: 49.99,
-        category: "pants"
+        "id": 10,
+        "name": "Khaki Cargo Pants",
+        "image": "images/khakiCargos.jpeg",
+        "price": 49.99,
+        "category": "pants",
+        "department": "mens"
     },
     {
-        name: "Linen Pants",
-        image: "images/linenPantsM.jpeg",
-        price: 39.99,
-        category: "pants"
+        "id": 11,
+        "name": "Linen Pants",
+        "image": "images/linenPantsM.jpeg",
+        "price": 39.99,
+        "category": "pants",
+        "department": "mens"
 
     },
     {
-        name: "Beige Mens Blazer",
-        image: "images/blazer.jpeg",
-        price: 79.99,
-        category: "jackets"
-
+        "id": 12,
+        "name": "Beige Mens Blazer",
+        "image": "images/blazer.jpeg",
+        "price": 79.99,
+        "category": "jackets",
+        "department": "mens"
     },
     {
-        name: "Pink Collared Shirt",
-        image: "images/mensCollaredShirt.jpeg",
-        price: 59.99,
-        category: "shirts"
-
+        "id": 13,
+        "name": "Pink Collared Shirt",
+        "image": "images/mensCollaredShirt.jpeg",
+        "price": 59.99,
+        "category": "shirts",
+        "department": "mens"
     },
     {
-        name: "Striped Linen Collared Shirt",
-        image: "images/menShirt1.jpeg",
-        price: 49.99,
-        category: "shirts"
-
+        "id": 14,
+        "name": "Striped Linen Collared Shirt",
+        "image": "images/menShirt1.jpeg",
+        "price": 49.99,
+        "category": "shirts",
+        "department": "mens"
     }
-
 ];
 
 function displayProducts(list) {
