@@ -1,32 +1,58 @@
 const womensProducts = [
-    { 
-      name: "Short Long Sleeve Red Dress", 
-      image: "images/reddress1.jpeg",
-      price: 49.99,
-      description: "A stylish short long sleeve red dress perfect for parties."
+    {
+        "id": 1,
+        "name": "Blue Mini Dress",
+        "image": "images/blueDress.jpeg",
+        "price": 39.99,
+        "category": "dress",
+        "department": "womens"
     },
-    { 
-      name: "Long Pleated Red Dress", 
-      image: "images/reddress2.jpeg",
-      price: 59.99,
-      description: "Elegant long pleated red dress for formal occasions."
+    {
+        "id": 2,
+        "name": "Long Pleated Red Dress",
+        "image": "images/reddress2.jpeg",
+        "price": 59.99,
+        "category": "dress",
+        "department": "womens"
     },
-    { 
-      name: "One shoulder Red Dress", 
-      image: "images/reddress3.jpeg",
-      price: 54.99,
-      description: "Trendy one shoulder red dress for casual or evening wear."
+    {
+        "id": 3,
+        "name": "Blue Pullover Sweatshirt",
+        "image": "images/bluePulloverW.jpeg",
+        "price": 29.99,
+        "category": "shirts",
+        "department": "womens"
     },
-    { 
-      name: "Short Red Dress", 
-      image: "images/reddress4.jpeg",
-      price: 39.99,
-      description: "Simple short red dress, comfortable and stylish."
+    {
+        "id": 4,
+        "name": "Cream Dress Pants",
+        "image": "images/dressPantsW.jpeg",
+        "price": 48.99,
+        "category": "pants",
+        "department": "womens"
     },
-    { 
-      name: "Women's Jeans", 
-      image: "images/womenJeans1.jpeg",
-      price: 69.99,
-      description: "Classic women's jeans, versatile and durable."
+    {
+        "id": 5,
+        "name": "Green Short Sleeve T-shirt",
+        "image": "images/greenTeeW.jpeg",
+        "price": 19.99,
+        "category": "shirts",
+        "department": "womens"
+    },
+    {
+        "id": 6,
+        "name": "Light Wash Jeans",
+        "image": "images/lightwashJeansW.jpeg",
+        "price": 59.99,
+        "category": "pants",
+        "department": "womens"
+    },
+    {
+        "id": 7,
+        "name": "Dark Denim Jeans",
+        "image": "images/womensJean.jpeg",
+        "price": 49.99,
+        "category": "pants",
+        "department": "womens"
     }
 ];
